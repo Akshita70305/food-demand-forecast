@@ -1,0 +1,5 @@
+outs:
+- md5: b1980d9528b5c3e645e7f9a1a0986cec
+  size: 5669818
+  hash: md5
+  path: cumin_all_states_raw.csv

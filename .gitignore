@@ -213,8 +213,10 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Data (managed by DVC)
-data/raw/
-data/processed/
+data/raw/*.csv
+data/raw/*.json
+data/processed/*.csv
+data/processed/*.json
 
 # MLflow
 mlruns/
