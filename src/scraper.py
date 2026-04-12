@@ -177,8 +177,8 @@ def run_scraper(start_date: str, end_date: str, output_path: str,
 
 if __name__ == "__main__":
     run_scraper(
-        start_date="2026-01-01",
-        end_date="2026-01-03",
+        start_date="2020-01-01",
+        end_date="2025-12-31",
         output_path="data/raw/cumin_all_states_raw.csv",
         delay_seconds=2.0
     )
