@@ -1,15 +1,28 @@
-data:
-  commodity: "Cumin"
-  state: "Rajasthan"
-  start_year: 2018
-  end_year: 2024
+target: modal_price
 
-model:
-  test_size: 0.2
+features:
+  - year
+  - month
+  - day_of_year
+  - day_of_week
+  - is_harvest_season
+  - is_lean_season
+  - arrivals
+  - num_markets
+  - price_lag_7
+  - price_lag_14
+  - price_lag_30
+  - arrivals_lag_7
+  - price_roll_7
+  - price_roll_30
+  - arrivals_roll_7
+
+xgboost:
+  n_estimators: 500
+  max_depth: 8
+  learning_rate: 0.05
+  subsample: 0.85
+  colsample_bytree: 0.75
+  min_child_weight: 5
+  gamma: 0.1
   random_state: 42
-  n_estimators: 100
-  max_depth: 6
-  learning_rate: 0.1
-
-evaluation:
-  metric: "mape"
