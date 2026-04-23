@@ -1,8 +1,11 @@
+import os
+
 import streamlit as st
 import requests
 import pandas as pd
 import numpy as np
 import datetime
+import os
 
 # ── Page config ──
 st.set_page_config(
@@ -11,7 +14,7 @@ st.set_page_config(
     layout="wide"
 )
 
-API_URL = "http://127.0.0.1:8000"
+API_URL = os.getenv("API_URL", "http://127.0.0.1:8000")
 
 # ── Helper functions ──
 def get_season_flags(month):

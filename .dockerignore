@@ -1,0 +1,12 @@
+data/raw/
+mlruns/
+mlflow.db
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.dvc/
+notebooks/
+*.ipynb
+.env
+*.log
